@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>7.2</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Memory" Version="4.5.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="LineSection.cs">
+        <DependentUpon>WalkProgress.cs</DependentUpon>
+      </Compile>
+      <Compile Update="WalkProgressHelper.cs">
+        <DependentUpon>WalkProgress.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

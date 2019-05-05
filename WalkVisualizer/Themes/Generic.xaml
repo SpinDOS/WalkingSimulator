@@ -1,0 +1,18 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:walkVisualizer="clr-namespace:WalkVisualizer">
+    <Style TargetType="walkVisualizer:ControlWithLabel">
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="walkVisualizer:ControlWithLabel">
+                        <DockPanel>
+                            <Label Target="{TemplateBinding Content}" Content="{TemplateBinding LabelText}"/>
+                            <ContentPresenter Content="{TemplateBinding Content}"/>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+</ResourceDictionary>
